@@ -23,6 +23,11 @@ const startCounting = ({ width, progress, text }) => {
 		count++;
 		if (count > width) {
 			clearInterval(interval)
+			location.reload();
+			// const root = document.querySelector('.root');
+			// root.remove();
+			// const body = document.body;
+			// body.style.backgroundImage = "url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/18.jpg')";
 		}
 	}
 	interval = setInterval(setCount, 50)
